@@ -1,0 +1,20 @@
+# Terraform
+.terraform/
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.backup
+*.tfplan
+crash.log
+
+# NOTE: terraform.tfstate and tfstate.backup are kept in this repo for reference.
+# If you are using this in a real environment, uncomment the lines above to exclude them,
+# and use a remote backend (S3 + DynamoDB) for state management instead.
+
+# Generated Kubernetes manifests (auto-created by Terraform at runtime)
+# k8s/backend.yaml
+# k8s/frontend.yaml
+# These are committed here so the repo is self-contained and ready to explore.
+# In a real workflow, uncomment the above lines since they get regenerated on every apply.
+
+# OS
+.DS_Store
