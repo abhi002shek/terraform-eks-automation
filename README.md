@@ -53,7 +53,7 @@ If you want Terraform state stored in S3 with DynamoDB locking:
 
 ```bash
 # Create S3 bucket
-aws s3api create-bucket --bucket tf-state-<your-suffix> --region us-east-1
+aws s3api create-bucket --bucket tf-state-<your-suffix> --region ap-south-2a
 
 # Create DynamoDB table for state locking
 aws dynamodb create-table \
